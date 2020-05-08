@@ -13,14 +13,14 @@ struct OnboardingView: View {
         VStack {
             PageViewContainer(viewControllers: OnboardingPage.getAll.map { UIHostingController(rootView: PageView(page: $0))})
                 .frame(maxHeight: .infinity)
-                .background(Color.backgroundColor)
-                .edgesIgnoringSafeArea(.top)
         }
+        .background(Color.backgroundColor)
+        .edgesIgnoringSafeArea(.all)
     }
 }
 
 struct OnboardingView_Previews: PreviewProvider {
     static var previews: some View {
-        OnboardingView()
+        OnboardingView().environment(\.colorScheme, .dark)
     }
 }

@@ -12,18 +12,27 @@ struct PageViewContainer<T: View>: View {
 
     var viewControllers: [UIHostingController<T>]
     @State var currentPage = 0
+    @State var presentLoginSheet: Bool = false
 
     var body: some View {
 
         VStack {
             OnboardingPageViewController(controllers: viewControllers, currentPage: self.$currentPage)
             PageIndicator(currentIndex: self.currentPage)
-            OnboardingButton(text: currentPage == viewControllers.count - 1 ? "Get Started" : "Next") {
+            Button(action: {
                 if self.currentPage < self.viewControllers.count - 1 {
                     self.currentPage += 1
+                } else {
+                    self.presentLoginSheet.toggle()
                 }
+
+            }) {
+                Text(currentPage == viewControllers.count - 1 ? "Get Started" : "Next")
             }
-        .padding()
+            .modifier(ButtonModifier())
+            .sheet(isPresented: self.$presentLoginSheet) {
+                LoginView(presentLoginSheet: self.$presentLoginSheet)
+            }
         }
         .background(Color.backgroundColor)
 

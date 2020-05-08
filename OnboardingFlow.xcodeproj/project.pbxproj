@@ -19,7 +19,12 @@
 		FF2A69DF24649B700035CE76 /* PageViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2A69DE24649B700035CE76 /* PageViewContainer.swift */; };
 		FF2A69E124649CA00035CE76 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2A69E024649CA00035CE76 /* ColorExtensions.swift */; };
 		FF2A69E324649D960035CE76 /* PageIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2A69E224649D960035CE76 /* PageIndicator.swift */; };
-		FF2A69E524649EB80035CE76 /* OnboardingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2A69E424649EB80035CE76 /* OnboardingButton.swift */; };
+		FF2A69E72465BCAE0035CE76 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2A69E62465BCAE0035CE76 /* LoginView.swift */; };
+		FF2A69E92465BF200035CE76 /* SRTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2A69E82465BF200035CE76 /* SRTextField.swift */; };
+		FF2A69EB2465C9EE0035CE76 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2A69EA2465C9EE0035CE76 /* SignUpView.swift */; };
+		FF2A69ED2465CB140035CE76 /* PasswordRecoveryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2A69EC2465CB140035CE76 /* PasswordRecoveryView.swift */; };
+		FF2A69EF2465CC630035CE76 /* KeyboardExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2A69EE2465CC630035CE76 /* KeyboardExtensions.swift */; };
+		FF2A69F12465D4A00035CE76 /* ButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2A69F02465D4A00035CE76 /* ButtonModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +42,12 @@
 		FF2A69DE24649B700035CE76 /* PageViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewContainer.swift; sourceTree = "<group>"; };
 		FF2A69E024649CA00035CE76 /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
 		FF2A69E224649D960035CE76 /* PageIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageIndicator.swift; sourceTree = "<group>"; };
-		FF2A69E424649EB80035CE76 /* OnboardingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingButton.swift; sourceTree = "<group>"; };
+		FF2A69E62465BCAE0035CE76 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		FF2A69E82465BF200035CE76 /* SRTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SRTextField.swift; sourceTree = "<group>"; };
+		FF2A69EA2465C9EE0035CE76 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		FF2A69EC2465CB140035CE76 /* PasswordRecoveryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordRecoveryView.swift; sourceTree = "<group>"; };
+		FF2A69EE2465CC630035CE76 /* KeyboardExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardExtensions.swift; sourceTree = "<group>"; };
+		FF2A69F02465D4A00035CE76 /* ButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +84,8 @@
 				FF2A69C024648EC60035CE76 /* SceneDelegate.swift */,
 				FF2A69DA2464982A0035CE76 /* OnboardingPage.swift */,
 				FF2A69E024649CA00035CE76 /* ColorExtensions.swift */,
+				FF2A69EE2465CC630035CE76 /* KeyboardExtensions.swift */,
+				FF2A69F02465D4A00035CE76 /* ButtonModifier.swift */,
 				FF2A69D7246491C30035CE76 /* ViewControllers */,
 				FF2A69D4246491A00035CE76 /* Views */,
 				FF2A69C424648EC80035CE76 /* Assets.xcassets */,
@@ -99,7 +111,10 @@
 				FF2A69DC24649A160035CE76 /* PageView.swift */,
 				FF2A69DE24649B700035CE76 /* PageViewContainer.swift */,
 				FF2A69E224649D960035CE76 /* PageIndicator.swift */,
-				FF2A69E424649EB80035CE76 /* OnboardingButton.swift */,
+				FF2A69E62465BCAE0035CE76 /* LoginView.swift */,
+				FF2A69E82465BF200035CE76 /* SRTextField.swift */,
+				FF2A69EA2465C9EE0035CE76 /* SignUpView.swift */,
+				FF2A69EC2465CB140035CE76 /* PasswordRecoveryView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -183,14 +198,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF2A69E524649EB80035CE76 /* OnboardingButton.swift in Sources */,
 				FF2A69D6246491C00035CE76 /* OnboardingPageViewController.swift in Sources */,
+				FF2A69E92465BF200035CE76 /* SRTextField.swift in Sources */,
 				FF2A69DF24649B700035CE76 /* PageViewContainer.swift in Sources */,
 				FF2A69DD24649A160035CE76 /* PageView.swift in Sources */,
 				FF2A69E124649CA00035CE76 /* ColorExtensions.swift in Sources */,
 				FF2A69D324648EF60035CE76 /* OnboardingView.swift in Sources */,
 				FF2A69BF24648EC60035CE76 /* AppDelegate.swift in Sources */,
+				FF2A69EB2465C9EE0035CE76 /* SignUpView.swift in Sources */,
 				FF2A69C124648EC60035CE76 /* SceneDelegate.swift in Sources */,
+				FF2A69F12465D4A00035CE76 /* ButtonModifier.swift in Sources */,
+				FF2A69EF2465CC630035CE76 /* KeyboardExtensions.swift in Sources */,
+				FF2A69ED2465CB140035CE76 /* PasswordRecoveryView.swift in Sources */,
+				FF2A69E72465BCAE0035CE76 /* LoginView.swift in Sources */,
 				FF2A69E324649D960035CE76 /* PageIndicator.swift in Sources */,
 				FF2A69DB2464982A0035CE76 /* OnboardingPage.swift in Sources */,
 			);
